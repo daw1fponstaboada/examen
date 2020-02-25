@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Modificar</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Login</a></li>
+            <li>
+                <div class="dropdown">
+                    <a onclick="myFunction()" class="dropbtn">Opciones</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="añadir.html">Añadir pelicula</a>
+                        <a href="borrar.html">Borrar pelicula</a>
+                        <a href="index.html">Volver a indice</a>
+                    </div>
+                </div>
+
+            </li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+    <div class="garriga"><img class="garriga" id="garriga" src="img/garrigabook.png"></div>
+
+
+
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nombre de libro</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Nombre del libro...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Nuevo valor de autor</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Stephen King, J.R.R Tolkien...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Nuevo genero</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Suspense</option>
+                        <option value="canada">Policiaca</option>
+                        <option value="usa">Politico</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Nueva descripcion</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Descripcion" style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Modificar">
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src=index.js></script>
+</body>
+
+</html>
